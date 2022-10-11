@@ -46,3 +46,20 @@ at package json at scripts type as below
 8. install prettier plugin as dev dependency
 
 npm i -D prettier-plugin-tailwindcss
+
+9. add prettier at scripts at package json
+
+ "scripts": {
+    "tailwind": "npx tailwindcss -i ./src/input.css -o ./build/css/style.css --watch",
+    "prettier": "npx prettier --write **/*.html"
+  },
+
+  this prettier will format the neat of the code no matter who's working on it
+
+10. run the tailwind
+
+npm run tailwind
+
+11. Add css link to html file 
+<link rel="stylesheet" href="css/style.css">
+at the head
