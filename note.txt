@@ -1,0 +1,48 @@
+Step by step 
+
+1. Create tailwind config file
+
+npx tailwindcss init
+
+2. Create new directories
+
+build
+src
+
+3. at src: create new file input.css
+
+then at input.css, type
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+4. at build: 
+a. create a new folder img
+and paste all the images needed there
+
+b. create new html file index.html
+
+5. add new favicon.ico at the root directory
+(just for the development)
+
+6. at tailwind.config.js
+content: ['./build/*.html'],
+
+
+7. at terminal
+
+npm init -y
+
+to create package json
+
+at package json at scripts type as below
+
+"scripts": {
+    "tailwind": "npx tailwindcss -i ./src/input.css -o ./build/css/style.css --watch"
+  },
+
+
+8. install prettier plugin as dev dependency
+
+npm i -D prettier-plugin-tailwindcss
