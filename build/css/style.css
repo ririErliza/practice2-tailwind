@@ -671,8 +671,8 @@ video {
 }
 
 .animate-open-menu {
-  -webkit-animation: open-menu 0.5s ease-in-out forwards;
-          animation: open-menu 0.5s ease-in-out forwards;
+  -webkit-animation: open-menu;
+          animation: open-menu;
 }
 
 .scroll-mt-40 {
