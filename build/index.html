@@ -7,6 +7,8 @@
     <title>Mimi Bikes</title>
 
     <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/main.js" defer></script>
 </head>
 
 <body class="min-h-screen bg-amber-50 dark:bg-black dark:text-white">
@@ -18,7 +20,7 @@
             </h1>
 
             <div>
-                <button id="mobile-open-button" class="text-3xl sm:hidden focus:outline-none text-amber-50">
+                <button id="hamburger-button" class="text-3xl md:hidden focus:outline-none text-amber-50">
                     &#9776;
                 </button>
 
@@ -29,6 +31,18 @@
                 </nav>
             </div>
 
+        </section>
+        <section id="mobile-menu" class="absolute top-0 bg-amber-900 w-full text-5xl flex-col justify-content-center origin-top animate-open-menu hidden">
+            <button class="text-8xl self-end px-6 text-amber-100">
+                &times;
+            </button>
+            <nav class="flex flex-col min-h-screen items-center py-8" aria-label="mobile">
+                <a href="#hero" class="w-full text-center py-6 hover:opacity-90 text-amber-100">Home</a>
+                <a href="#offers" class="w-full text-center py-6 hover:opacity-90 text-amber-100">Offers</a>
+                <a href="#testimonials" class="w-full text-center py-6 hover:opacity-90 text-amber-100">Testimonials</a>
+                <a href="#contact" class="w-full text-center py-6 hover:opacity-90 text-amber-100">Contact</a>
+                <a href="#footer" class="w-full text-center py-6 hover:opacity-90 text-amber-100">Legal</a>
+            </nav>
         </section>
     </header>
 
@@ -156,8 +170,7 @@
                 <input type="text" id="subject" name="subject" required minlength="3" maxlength="60" placeholder="Your Subject" class="w-full text-amber-800 text-2xl sm:text-3xl p-3 rounded-xl border border-solid border-amber-900 dark:border-none" />
 
                 <label for="message" class="text-amber-800">Message:</label>
-                <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message" required class="w-full text-amber-800 text-2xl sm:text-3xl p-3 rounded-xl border border-solid border-amber-900 dark:border-none">
-                </textarea>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message" required class="w-full text-amber-800 text-2xl sm:text-3xl p-3 rounded-xl border border-solid border-amber-900 dark:border-none"></textarea>
                 <button class="bg-amber-900 hover:bg-amber-700 active:bg-amber-500 text-amber-50 p-3 w-48 rounded-xl border border-solid border-amber-900 dark:border-none">Submit</button>
             </form>
         </section>
